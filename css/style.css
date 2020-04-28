@@ -29,7 +29,7 @@ h2 {
 }
 h2:hover{
   width: 250px;
-  box-shadow: rgba(173, 252, 225, .5) 20px 20px 15px;
+  box-shadow: rgba(173, 252, 225, .4) 20px 20px 15px;
 }
 p {
   background-color: blueviolet;
@@ -49,13 +49,13 @@ a:hover {
 #footer {
   bottom: 0;
   position: absolute;
-  background-color: blueviolet;
+  background-color: rgb(190, 64, 221);
   border-radius: 20%;
   padding: 15px 10px 10px 5px;
   font-size: 80%;
   text-align: right;
   border: none;
-  box-shadow: blueviolet 0px 0px 50px 70px;
+  box-shadow: rgb(190, 64, 221) 0px 0px 50px 70px;
   z-index: -1;
   
 
