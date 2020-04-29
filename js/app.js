@@ -77,5 +77,52 @@ if (goalClown === 'no' || goalClown === 'n') {
   alert('I don\'t understand. The correct answer is no. Let\'s move on.');
 }
 
+// Question 6 - Number game
+var numberThinking = Math.floor(Math.random() * 20 + 1);
+
+for (var i = 0; i < 4; i++){
+  if ( i === 0) {
+    var numberGuess = prompt('I\'m thinking of a number from 1-20. Try to guess what it is!');
+  }
+  if (numberThinking == numberGuess) {
+    numRight++;
+    alert('You got it! Good job!');
+    break;
+  } else if (i === 3) {
+    alert('The number was ' + numberThinking + '. Good try!');
+    break;
+  } else if (numberGuess < numberThinking) {
+    numberGuess = prompt('Too low. Try another number.');
+  } else if (numberGuess > numberThinking) {
+    numberGuess = prompt('Too high. Try another number.');
+  } else {
+    numberGuess = prompt('I don\'t recognize that. Try to guess a number');
+  }
+}
+
+// Question 7 - Seinfeld guessing game
+var seinfeldCharcters = ['jerry', 'george', 'elaine', 'kramer'];
+var finish = false; // Tells if we can exit the loop
+
+for (var i = 6; i > 0; i--) {
+  if (i === 6) {
+    var charGuess = prompt('I\'m a big Seinfeld fan. Tell the name of one of the main characters.').toLowerCase();
+  } else {
+    var charGuess = prompt('Nope! Guess again! Number of guesses remaining: ' + i);
+  }
+  for ( var x = 0; x < seinfeldCharcters.length; x++) {
+    if (charGuess === seinfeldCharcters[x]) {
+      alert('That is correct!');
+      numRight++;
+      finish = true;
+    }
+  }
+  if (finish) {
+    break;
+  } else if (i === 1) {
+    alert('You are out of guesses. The main characters on Seinfeld are Jerry, George, Elaine, and Kramer.');
+  }
+}
+
 // Final alert
-alert('I hope that was fun ' + userName + '! You got ' + numRight + ' answers correct!');
+alert('I hope that was fun ' + userName + '! You got ' + numRight + '/7 answers correct!');
