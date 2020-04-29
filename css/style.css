@@ -9,7 +9,7 @@ h1 {
   margin: 0;
   padding: 7% 0% 2% 0%;
   text-align: center;
-  font-size: 300%;
+  font-size: 400%;
   color: rgb(98, 233, 204); 
 }
 h2 {
@@ -36,6 +36,7 @@ p {
   border-radius: 20%;
   border: 7px solid rgb(102, 100, 237);
   color:rgb(245, 231, 236);
+  /* font-size: 18px; */
 }
 a {
   color: rgb(156, 202, 240);
@@ -46,13 +47,19 @@ a:hover {
 }
 #footer {
   bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
   position: absolute;
+  width: 50%;
   background-color: rgb(190, 64, 221);
   border-radius: 20%;
   padding: 15px 10px 10px 5px;
   font-size: 80%;
-  text-align: right;
+  text-align: center;
   border: none;
   box-shadow: rgb(190, 64, 221) 0px 0px 50px 70px;
   z-index: -1;
 }
+
