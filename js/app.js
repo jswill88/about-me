@@ -84,6 +84,7 @@ for (var i = 0; i < 4; i++){
   if ( i === 0) {
     var numberGuess = prompt('I\'m thinking of a number from 1-20. Try to guess what it is!');
   }
+  // eslint-disable-next-line eqeqeq
   if (numberThinking == numberGuess) {
     numRight++;
     alert('You got it! Good job!');
@@ -101,14 +102,14 @@ for (var i = 0; i < 4; i++){
 }
 
 // Question 7 - Seinfeld guessing game
-var seinfeldCharcters = ['jerry', 'george', 'elaine', 'kramer'];
+var seinfeldCharcters = ['jerry', 'george', 'elaine', 'kramer', 'cosmo'];
 var finish = false; // Tells if we can exit the loop
 
-for (var i = 6; i > 0; i--) {
-  if (i === 6) {
-    var charGuess = prompt('I\'m a big Seinfeld fan. Tell the name of one of the main characters.').toLowerCase();
+for (var j = 6; j > 0; j--) {
+  if (j === 6) {
+    var charGuess = prompt('I\'m a big Seinfeld fan. Tell the name of one of the four main characters.').toLowerCase();
   } else {
-    var charGuess = prompt('Nope! Guess again! Number of guesses remaining: ' + i);
+    charGuess = prompt('Nope! Guess again! Number of guesses remaining: ' + j);
   }
   for ( var x = 0; x < seinfeldCharcters.length; x++) {
     if (charGuess === seinfeldCharcters[x]) {
@@ -119,7 +120,7 @@ for (var i = 6; i > 0; i--) {
   }
   if (finish) {
     break;
-  } else if (i === 1) {
+  } else if (j === 1) {
     alert('You are out of guesses. The main characters on Seinfeld are Jerry, George, Elaine, and Kramer.');
   }
 }
