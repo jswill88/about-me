@@ -7,6 +7,24 @@ var numRight = 0;
 var userName = prompt('Hi! What is your name?');
 alert('Welcome ' + userName + '! I\'m Josh Williams. Enjoy my site. Make yourself at home. Let\'s start with a quiz about my biographical info.');
 
+// Working on getting all questions into an array
+// [0] is the Question,
+// var questions = [['Did I grow up in Kent, Washingoton?'],[['yes'],['y']],['Wrong! I did grow up in Kent.']];
+
+// var answer = prompt(questions[y][0]).toLowerCase();
+// if (growUpKent === 'yes' || growUpKent === 'y') {
+//   // console.log('When asked if website owner grew up in Kent, the user responded ' + growUpKent + '. This is correct.');
+//   numRight++;
+//   alert('That\'s correct!');
+// } else if (growUpKent === 'no' || growUpKent === 'n') {
+//   // console.log('When asked if website owner grew up in Kent, the user responded ' + growUpKent + '. This is incorrect.');
+//   alert('Wrong! I did grow up in Kent.');
+// } else {
+//   // console.log('When asked if website owner grew up in Kent, the user responded ' + growUpKent + '. This is incorrect.');
+//   alert('I don\'t understand. The correct answer is yes. Let\'s move on.');
+// }
+
+
 // Question 1
 var growUpKent = prompt('Did I grow up in Kent, Washington?').toLowerCase();
 if (growUpKent === 'yes' || growUpKent === 'y') {
