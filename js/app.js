@@ -8,7 +8,7 @@ var userName = prompt('Hi! What is your name?');
 function greeting(){
   alert('Welcome ' + userName + '! I\'m Josh Williams. Enjoy my site. Make yourself at home. Let\'s start with a quiz about my biographical info.');
 }
-  
+
 // Question 1
 function questionOne(){
   var growUpKent = prompt('Did I grow up in Kent, Washington?').toLowerCase();
