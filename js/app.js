@@ -10,7 +10,7 @@ function greeting(){
 }
   
 // Question 1
-function questionOne (){
+function questionOne(){
   var growUpKent = prompt('Did I grow up in Kent, Washington?').toLowerCase();
   if (growUpKent === 'yes' || growUpKent === 'y') {
     // console.log('When asked if website owner grew up in Kent, the user responded ' + growUpKent + '. This is correct.');
