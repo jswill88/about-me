@@ -88,15 +88,19 @@ for (var i = 0; i < 4; i++){
   if (numberThinking == numberGuess) {
     numRight++;
     alert('You got it! Good job!');
+    console.log('When asked to guess a number, the user guessed ' + numberThinking + '. This is correct');
     break;
   } else if (i === 3) {
     alert('The number was ' + numberThinking + '. Good try!');
     break;
   } else if (numberGuess < numberThinking) {
+    console.log('When asked to guess a number, the user guessed ' + numberGuess + '. This is incorrect');
     numberGuess = prompt('Too low. Try another number.');
   } else if (numberGuess > numberThinking) {
+    console.log('When aked to guess a number, the user guessed ' + numberGuess + '. This is incorrect');
     numberGuess = prompt('Too high. Try another number.');
   } else {
+    console.log('When asked to guess a number, the user guessed ' + numberGuess + '. This is incorrect');
     numberGuess = prompt('I don\'t recognize that. Try to guess a number');
   }
 }
@@ -109,11 +113,13 @@ for (var j = 6; j > 0; j--) {
   if (j === 6) {
     var charGuess = prompt('I\'m a big Seinfeld fan. Tell the name of one of the four main characters.').toLowerCase();
   } else {
-    charGuess = prompt('Nope! Guess again! Number of guesses remaining: ' + j);
+    console.log('When asked to guess a Seinfeld character, the user guessed ' + charGuess + '. This is incorrect');
+    charGuess = prompt('Nope! Guess again! Number of guesses remaining: ' + j).toLowerCase();
   }
   for ( var x = 0; x < seinfeldCharcters.length; x++) {
     if (charGuess === seinfeldCharcters[x]) {
       alert('That is correct!');
+      console.log('When asked to guess a Seinfeld character, the user guessed ' + charGuess + '. This is correct');
       numRight++;
       finish = true;
     }
