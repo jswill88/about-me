@@ -112,7 +112,6 @@ function questionFive(){
 
 
 // Question 6 - Number game
-
 function numberGame(){
   var numberThinking = Math.floor(Math.random() * 20 + 1);
 
@@ -144,7 +143,6 @@ function numberGame(){
 
 
 // Question 7 - Seinfeld guessing game
-
 function seinfeldGame(){
   var seinfeldCharcters = ['jerry', 'george', 'elaine', 'kramer', 'cosmo'];
   var finish = false; // Tells if we can exit the loop
