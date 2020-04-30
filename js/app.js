@@ -59,7 +59,7 @@ function questionThree(){
 }
 
 
-// Question 4
+// Question 4 - Carnival Cruise Lines
 function questionFour(){
   var workCarnival = prompt('Did I work for Carnival?').toLowerCase();
   if (workCarnival === 'yes' || workCarnival === 'y') {
