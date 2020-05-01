@@ -9,8 +9,8 @@ function greeting(){
   alert('Welcome ' + userName + '! I\'m Josh Williams. Enjoy my site. Make yourself at home. Let\'s start with a quiz about my biographical info.');
 }
 
-// Questions 1-5
-// [0] is the Question, [1][0-3] is the answer, [2] is the incorrect response, [3] is the console log
+// Questions 1-5 - Bio Questions
+// [][0] is the Question, [][1][0-3] is the answer, [][2] is the incorrect response, [][3] is the console log
 var answerYes = ['yes','y','no','n'];
 var answerNo = ['no','n','yes','y'];
 var questionInfo = [
@@ -29,7 +29,7 @@ var questionInfo = [
 function bioQuestions(){
   for(var h = 0; h < questionInfo.length; h++) {
     var answer = prompt(questionInfo[h][0]).toLowerCase();
-    if ((questionInfo[h][1][0] === answer) || (questionInfo[h][1][1] === answer)) {
+    if (questionInfo[h][1][0] === answer || questionInfo[h][1][1] === answer) {
       numRight++;
       alert('That\'s correct!');
       console.log(questionInfo[h][3] + answer + '. This is correct');
