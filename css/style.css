@@ -10,10 +10,11 @@ h1 {
   padding: 7% 0% 2% 0%;
   text-align: center;
   font-size: 400%;
-  color: rgb(98, 233, 204); 
+  color: rgb(208, 247, 239);
 }
 h2 {
   background-color: rgb(243, 181, 235);
+  color: black;
   text-align: center;
   padding: 20px 0 20px 0;
   width: 200px;
@@ -43,23 +44,23 @@ h2:hover, h3:hover {
   box-shadow: rgba(173, 252, 225, .4) 20px 20px 15px;
 }
 p {
-  background-color: blueviolet;
-  margin: 10px;
+  background-color: rgb(33, 6, 59);
+  margin: 10px 40px 10px 40px;
   padding: 30px;
   border-radius: 20%;
-  border: 7px solid rgb(102, 100, 237);
+  border: 7px solid blueviolet;
   color:rgb(245, 231, 236);
 }
 ol, ul {
-  background-color: blueviolet;
+  background-color: rgb(33, 6, 59);
   margin: 10px;
   width: 150px;
   padding:  30px 60px 30px 60px;
   border-radius: 20%;
-  border: 7px solid rgb(102, 100, 237);
+  border: 7px solid blueviolet;
   color:rgb(245, 231, 236);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   z-index: 1;
 }
 #work {
@@ -86,14 +87,21 @@ a:hover {
   left: 0;
   position: relative;
   width: 50%;
-  background-color: rgb(190, 64, 221);
+  background-color: rgb(218, 130, 240);
   border-radius: 20%;
   padding: 15px 10px 10px 5px;
   font-size: 80%;
   text-align: center;
   border: none;
-  box-shadow: rgb(190, 64, 221) 0px 0px 50px 70px;
+  box-shadow: rgb(218, 130, 240) 0px 0px 50px 70px;
   z-index: 0;
+  color:rgb(17, 3, 60);
+}
+a[href*="https://github.com/jswill88"] {
+  color: rgb(17, 3, 60);
+}
+a:hover[href*="https://github.com/jswill88"] {
+  color: rgb(64, 46, 117);
 }
 
 
